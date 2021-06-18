@@ -1,0 +1,7 @@
+weather
+clima
+rain
+sun
+sunny
+hot
+cold

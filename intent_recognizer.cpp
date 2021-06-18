@@ -1,10 +1,10 @@
+#include "intent_recognizer.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <regex>
 #include <fstream>
-#include <thread>
-#include <stdio.h>
+
 
 
 using namespace std;
@@ -40,7 +40,7 @@ string get_intent(string str) {
 	for(int i=0; i<vec_pattern_city.size(); i++){
 
 		if(regex_match(str, sm,regex(vec_pattern_city.at(i).first))){
-			cout<<"MATCH:"<<sm[1]<<"-"<<vec_pattern_city.at(i).second<<endl;
+			//cout<<"MATCH:"<<sm[1]<<"-"<<vec_pattern_city.at(i).second<<endl;
 
 			if(vec_pattern_city.at(i).second=="fact")
 				c_fact++;
@@ -54,36 +54,32 @@ string get_intent(string str) {
 	}
 
 	if (c_fact>0)
-		//cout<<"Intent: Get Fact"<<endl;
 		result = "Intent: Get Fact";
 	else if (c_cal>0)
-		//cout<<"Intent: Check Calendar"<<endl;
 		result = "Intent: Check Calendar";
 	else if (c_city>0)
-		//cout<<"Intent: Get Weather City"<<endl;
 		result = "Intent: Get Weather City";
 	else if (c_weather>0)
-		//cout<<"Intent: Get Weather"<<endl;
 		result = "Intent: Get Weather";
 
 	return result;
 }
 
+/*
 int main(int argc, char **argv) {
-	//cout << "Hello world";
 
+	/*cout<<"Type exit to quit the program"<<endl;
 
+	string str="";
 
-	string line;
+	while (true) {
+		getline(cin,str);
+		if (str == "exit")
+			break;
+		cout<<"STR:"<<str<<endl;
 
-	//ifstream myfile_city;
-
-	string str;
-	getline(cin,str);
-	cout<<"STR:"<<str<<endl;
-
-	cout<<get_intent(str)<<endl;
-
+		cout<<get_intent(str)<<endl;
+	}
 	/*myfile_city.open("../files/cities.txt");
 	if(myfile_city.is_open()) {
 		while(getline(myfile_city,line)) {
@@ -93,6 +89,7 @@ int main(int argc, char **argv) {
 		}
 		myfile_city.close();
 	}*/
-
+/*
 	return 0;
 }
+*/

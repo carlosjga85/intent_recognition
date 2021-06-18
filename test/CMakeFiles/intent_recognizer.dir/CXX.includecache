@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/carlos/eclipse-workspace/intent_recognizer/intent_recognizer.cpp
+intent_recognizer.h
+/home/carlos/eclipse-workspace/intent_recognizer/intent_recognizer.h
+iostream
+-
+string
+-
+vector
+-
+regex
+-
+fstream
+-
+
+/home/carlos/eclipse-workspace/intent_recognizer/intent_recognizer.h
+string
+-
+

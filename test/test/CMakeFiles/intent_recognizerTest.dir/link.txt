@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/intent_recognizerTest.dir/intent_recognizerTest.cpp.o  -o intent_recognizerTest ../lib/libgtest_main.a ../libintent_recognizer.a ../lib/libgtest.a -lpthread 
