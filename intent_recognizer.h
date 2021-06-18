@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 #ifndef INTENT_RECOGNIZER_H
 #define INTENT_RECOGNIZER_H
 

@@ -335,6 +335,8 @@ acxx_demangle.h
 /home/carlos/eclipse-workspace/intent_recognizer/intent_recognizer.h
 string
 -
+vector
+-
 
 /home/carlos/eclipse-workspace/intent_recognizer/test/intent_recognizerTest.cpp
 ../intent_recognizer.h
@@ -342,5 +344,7 @@ string
 gtest/gtest.h
 -
 string
+-
+iostream
 -
 

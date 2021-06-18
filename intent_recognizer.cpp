@@ -7,6 +7,7 @@
 
 
 
+
 using namespace std;
 
 const auto prefix = "^.*?\\b("s;
@@ -17,6 +18,10 @@ vector<pair<string,string>> vec_pattern_city = {
 	{prefix + "London" + suffix,"city"},
 	{prefix + "Berlin" + suffix,"city"},
 	{prefix + "New York" + suffix,"city"},
+	{prefix + "Munchen" + suffix,"city"},
+	{prefix + "Amsterdam" + suffix,"city"},
+	{prefix + "Madrid" + suffix,"city"},
+	{prefix + "Lisbon" + suffix,"city"},
 	{prefix + "weather" + suffix,"weather"},
 	{prefix + "rain" + suffix,"weather"},
 	{prefix + "sun" + suffix,"weather"},
@@ -67,6 +72,7 @@ string get_intent(string str) {
 
 /*
 int main(int argc, char **argv) {
+
 
 	/*cout<<"Type exit to quit the program"<<endl;
 

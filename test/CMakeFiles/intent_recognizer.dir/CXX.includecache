@@ -23,4 +23,6 @@ fstream
 /home/carlos/eclipse-workspace/intent_recognizer/intent_recognizer.h
 string
 -
+vector
+-
 
