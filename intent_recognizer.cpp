@@ -31,6 +31,8 @@ vector<pair<string,string>> vec_pattern_city = {
 	{prefix + "story" + suffix,"fact"},
 	{prefix + "AM" + suffix,"calendar"},
 	{prefix + "PM" + suffix,"calendar"},
+	{prefix + "appointment" + suffix,"calendar"},
+	{prefix + "meeting" + suffix,"calendar"},
 	{"[[:digit:]]+","calendar"}
 };
 
